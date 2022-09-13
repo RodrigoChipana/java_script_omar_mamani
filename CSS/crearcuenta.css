@@ -1,0 +1,23 @@
+@media only screen and (max-width: 480px){
+.ctop{
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    
+    }
+.alinearform{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 13px;
+}
+.crearcuenta{
+    height: 170px;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    flex-direction: row;
+}
+}

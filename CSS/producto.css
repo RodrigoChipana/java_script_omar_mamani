@@ -1,0 +1,43 @@
+@media only screen and (max-width: 480px){
+        #mproducto{
+                display: grid;
+                grid-template-areas: 
+                "fotop"
+                "descp"
+                ;
+                grid-template-columns:  100%;
+                grid-template-rows:  50% 50%    ;
+                height: 750px;
+                border: 2px rgb(58, 228, 6) solid;
+            }
+            fotop{
+                grid-area: fotop;
+            }
+            descp{
+                grid-area: descp;
+            }
+            .descp{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                
+                
+            }
+            .titulo_descripcion{
+                height: 60px;
+                display: flex;
+                justify-items: center;
+                justify-content: center;
+                align-items: center;
+            }
+            .descripcion{
+                height: 280px;
+                padding-left: 3%;
+                
+            }
+            .terminos{
+                font-size: 12px;
+                padding-left: 3%;
+            }
+}
