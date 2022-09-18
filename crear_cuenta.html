@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear cuentas</title>
+    <title>Crear cuenta</title>
     <link rel="stylesheet" href="CSS/basic_style.css">
     <link rel="stylesheet" href="CSS/crearcuenta.css">
-    <!--Font awesone no lo uso <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <!--Unicons--><link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
-
 <body>
-<!--Encabezado-->  
+    <!--Encabezado-->  
     <header id="encabezado">
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
         <div class="perfil iconos" >
             <i class="uil uil-user-circle"></i>
         </div>
         <div class="shop iconos">
             <i class="uil uil-store-alt"></i>
         </div>
-        <div class="titulo">titulo</div>
+        <div class="titulo">UNIQUE</div>
         <div class="noti iconos">
-            <i class="uil uil-bell"></i></div>
-        <div class="men iconos">
-            <i class="uil uil-bars"></i>
+            <i class="uil uil-bell"></i>
         </div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
+        <div class="dropdown iconos">
+           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="--bs-btn-padding-y: .35rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .60rem;">
+            <i class="uil uil-bars"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">Action</button></li>
+            <li><button class="dropdown-item" type="button">Another action</button></li>
+            <li><button class="dropdown-item" type="button">Something else here</button></li>
+          </ul>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
     </header>
-    
-<!--CUERPO-->
+    <!--CUERPO-->
     <div class="ctop">
         <div class="crearcuenta">
             Crear cuenta
@@ -47,78 +55,78 @@
         <div class="alinearform">
             <div>
                 <form>
-                    <label for="nombre">Nombre:</label>
+                    <label for="nombre" class="fst-italic">Nombre:</label>
                     <input type="text" id="nombre"name="nombre">
                 </form>
             </div>
             <div>
                 <form>
-                    <label for="apellido">Apellido:</label>
+                    <label for="apellido" class="fst-italic">Apellido:</label>
                     <input type="text" id="apellido"name="apellido">
                 </form>
             </div>
             <div>
                 <form>
-                    <label for="mail">Mail:</label>
+                    <label for="mail" class="fst-italic">Mail:</label>
                     <input type="email" id="mail"name="mail">
                 </form>
             </div>
             <div>
                 <form>
-                    <label for="user">Usuario:</label>
+                    <label for="user" class="fst-italic">Usuario:</label>
                     <input type="text" id="user"name="user">
                 </form>
             </div>
             <div>
                 <form>
-                    <label for="contraseña">Contrase&ntilde;a:</label>
+                    <label for="contraseña" class="fst-italic">Contrase&ntilde;a:</label>
                     <input type="password" id="contraseña"name="contraseña" >
                 </form>
             </div>
             <div>
                 <form>
-                    <label for="rcontraseña">Repetir Contrase&ntilde;a:</label>
+                    <label for="rcontraseña" class="fst-italic">Repetir Contrase&ntilde;a:</label>
                     <input type="password" id="rcontraseña"name="rcontraseña" >
                 </form>
             </div>
-            <div>
-                <form >
-                    <div>Aceptar terminos y condiciones</div>
-                    <input type="checkbox" name="aceotar" value="1">
-                </form>
-            </div>
+        </div>
+        <div style="width: 100%;">
+            <form class="centrarform">
+                <div ><p  class="fst-italic">Aceptar terminos y condiciones</p> 
+                </div>
+                <input type="checkbox" name="aceptar" value="1">
+            </form>
         </div>
         <div>
-            <input type="submit" value="Registrarme">
+            <input type="submit" value="Registrarme" class="btn btn-secondary me-md-2 " >
         </div>
     </div>
-   
-<!--Pie-->
+    <!--Pie-->
     <footer id="pie">
         <div class="iface">
             <i class="uil uil-facebook"></i>
         </div>
-        <div class="face">facebook</div>
-        <div>.</div>
-        <div>.</div>
+        <div class="face redes">Facebook</div>
+        <div></div>
+        <div></div>
         <div class="itwi">
             <i class="uil uil-twitter"></i>
         </div>
-        <div class="twi">twitter</div>
-        <div>.</div>
-        <div>.</div>
+        <div class="twi redes">Twitter</div>
+        <div></div>
+        <div></div>
         <div class="iyou">
             <i class="uil uil-youtube"></i>
         </div>
-        <div class="you">youtube</div>
-        <div>.</div>
-        <div>.</div>
+        <div class="you redes">Youtube</div>
+        <div></div>
+        <div></div>
         <div class="iinsta">
             <i class="uil uil-instagram-alt"></i>
         </div>
-        <div class="insta">instagram</div>
-        <div>.</div>
-        <div>.</div>
+        <div class="insta redes">Instagram</div>
+        <div></div>
+        <div></div>
     </footer>
 </body>
 </html>

@@ -1,8 +1,8 @@
-div{border: 2px rgb(6, 84, 228) solid}
 body{margin: 0%;}
+
 @media only screen and (max-width: 480px){
-/*Encabezado*/
-    #encabezado{
+    /*Encabezado*/
+        #encabezado{
             display: grid;
             grid-template-areas: 
             "perfil"
@@ -11,12 +11,18 @@ body{margin: 0%;}
             "noti"
             "men"
             ;
-            grid-template-columns: 10%  10% 60% 10%  10%;
+            grid-template-columns: 13%  12% 50% 12%  13%;
             grid-template-rows: 25% 50% 25% ;
-            height: 95px;
-            border: 2px rgb(58, 228, 6) solid
         }
-        /**/
+        header{
+            background: #000000;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+            height: 95px;
+            align-items: center;
+            border-bottom: 3px #efb810 solid ;
+        }
         perfil{
             grid-area: perfil;
         }
@@ -32,6 +38,8 @@ body{margin: 0%;}
             display: flex;
             align-items: center;
             justify-content: center;
+            font-family: "Trirong", serif;
+            color: #daa520;
         }
         noti{
             grid-area: noti;
@@ -42,11 +50,9 @@ body{margin: 0%;}
         .iconos{
             text-align: center; 
             font-size: 23px; 
-            padding-top:8px;
         }
-      
-/*Pie de pagina*/   
-    #pie{
+    /*Pie de pagina*/   
+        #pie{
             display: grid;
             grid-template-areas: 
             "ifaceb"
@@ -60,29 +66,24 @@ body{margin: 0%;}
             ;
             grid-template-columns: 15%  25% 30% 30% ;
             grid-template-rows: 25% 25% 25% 25% ;
-            height: 120px;
-            border: 2px rgb(237, 228, 100) solid
+        }
+        footer{
+            background: #000000;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+            height: 150px;
+            align-items: center;
+            border-top: 3px #efb810 solid ;
         }
         iface{
             grid-area: iface;
-           
-        }
-        .iface{
-            text-align: center;
-            font-size: 23px;
-            color: rgb(0, 4, 255);
         }
         face{
             grid-area: face;
-            
         }
         itwi{
             grid-area: itwi;
-        }
-        .itwi{
-            text-align: center;
-            font-size: 23px;
-            color: #00B3FF;
         }
         twi{
             grid-area: twi;
@@ -90,29 +91,44 @@ body{margin: 0%;}
         iyou{
             grid-area: iyou;
         }
-        .iyou{
-            text-align: center;
-            font-size: 23px;
-            color: #E43100;
-        }
         you{
             grid-area: you;
         }
         iinsta{
             grid-area: iinsta;
         }
-        .iinsta{
-            text-align: center;
-            font-size: 23px;
-            color: #8008BD;
-        }
         insta{
             grid-area: insta;
+        }
+        .iface{
+            text-align: center;
+            font-size: 22px;
+            color: rgb(0, 4, 255);
+            padding-bottom: 8px;
+        }
+        .itwi{
+            text-align: center;
+            font-size: 22px;
+            color: #00B3FF;
+            padding-bottom: 4px;
+        }
+        .iyou{
+            text-align: center;
+            font-size: 22px;
+            color: #E43100;
+            padding-bottom: 2px;
+        }
+        .iinsta{
+            text-align: center;
+            font-size: 22px;
+            color: #ba68c8;
+            padding-bottom: 4px;
         }
         .centrarizq{
             display: flex;
             align-items: center;
-            
         }
-        
+        .redes{
+            font-family: 'Crimson Text', serif;
+        }
 }

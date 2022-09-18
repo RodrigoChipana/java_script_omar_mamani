@@ -1,169 +1,92 @@
 @media only screen and (max-width: 480px){
-    #cuerpo{
-        display: grid;
-        grid-template-areas: 
-        "buscador"
-        "principal"
-        "seccionuno"
-        "secciondos"
-        "secciontres"
-        ;
-        grid-template-columns: 100%;
-        grid-template-rows: 8% 32% 20% 20% 20%;
-        height: 800px;
-        border: 2px rgb(228, 6, 128) solid
-    }
-    principal{
-        grid-area: principal;
-    }
-    /*.principal{
-        width: 100%;
-        height: 400px;
-    }*/
-    .slider{
-        width: 80%;
-        height: 90%;
-        margin: auto;
-        overflow: hidden;
-    }
-    .slider ul{
-        display: flex;
-        padding: 0;
-        width: 400%;
-        animation: mover 20s infinite alternate;
-        animation-timing-function: ease-in;
-    }
-    .slider li{
-        width: 100%;
-        list-style: none;
-    }
-    .slider img {
-        width: 100%;
-        /*height="200px"*/
-        height: 200px;
-    }
-    @keyframes mover {
-        0%{margin-left: 0%;}
-        20%{margin-left: 0%;}
-
-        25%{margin-left: -100%;}
-        45%{margin-left: -100%;}
-
-        50%{margin-left: -200%;}
-        70%{margin-left: -200%;}
-
-        75%{margin-left: -300%;}
-        100%{margin-left: -300%;}
-
-    }
-    /*Buscador*/
+        #cuerpo{
+            display: grid;
+            grid-template-areas: 
+            "buscador"
+            "principal"
+            "seccionuno"
+            "secciondos"
+            "secciontres"
+            ;
+            grid-template-columns: 100%;
+            grid-template-rows: 8% 32% 20% 20% 20%;
+            height: 750px;
+        }
         buscador{
             grid-area: buscador;
         }
+        principal{
+            grid-area: principal;
+        }
+        seccionuno{
+            grid-area: seccionuno;
+        }
+        secciondos{
+            grid-area: secciondos;
+        }
+        secciontres{
+            grid-area: secciontres;
+        }
+        .slider{
+            width: 80%;
+            height: 90%;
+            margin: auto;
+            overflow: hidden; /*Ajusta para que la imagen no salga del div*/
+        }
+    /*Main de Index*/
+        .mainindex{
+                    background: #000000;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    color: white;
+                    height: 95px;
+                    align-items: center;
+        }
+    /*Buscador*/
         .buscador{
             display: flex;
             flex-direction: row;
-            border: 3px rgb(80, 255, 133) solid;
             width: 100%;
             align-items: center;
         }
         .espa1{
             width: 9%;  
         }
-        .ibus{
-            width: 10%; 
-            transform: translateX(42px);
-        }
         .bus{
-            width: 59%;
-            padding: 8px 0px 8px 42px;
+            width: 82%;
+            padding: 8px 0px 8px 8px;
         }
         .espa2{
-        width: 22%;  
+        width: 9%;  
         }
-    /*Seccion uno*/
-        seccionuno{
-            grid-area: seccionuno;
-            
+    /*Seccion*/
+        .semititulo{
+            padding-left: 2%;
         }
-        .seccionuno{
+        .seccion{
             display: flex;
             flex-direction: column  ;
-            border: 3px rgb(80, 255, 133) solid;
+            border-top: 1px #efb810 solid;
+            border-bottom: 1px #efb810 solid;
             width: 100%;
+            padding-bottom: 6px;
         }
-        .se1{
+        .seccionimagenes{
             display: flex;
             flex-direction: row  ;
-            height: 80%;
+            height: 75%;
             width: 100%;
-            border: 3px rgb(255, 173, 80) solid;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px rgb(172, 184, 176) solid;
+            padding-top: 10px;
+        }
+        .secciontexto{
+            display: flex;
+            flex-direction: row  ;
+            height: 25%;
+            width: 100%;
             justify-content: space-around;
             align-items: center;
         }
-        .txts1{
-            display: flex;
-            flex-direction: row  ;
-            height: 20%;
-            width: 100%;
-            border: 3px rgb(80, 170, 255) solid;
-            justify-content: space-around;
-            align-items: center;
-        }
-    /*Seccion dos*/
-    secciondos{
-        grid-area: secciondos;
-    }
-    .secciondos{
-        display: flex;
-        flex-direction: column  ;
-        border: 3px rgb(80, 255, 133) solid;
-        width: 100%;
-    }
-    .se2{
-        display: flex;
-        flex-direction: row  ;
-        height: 80%;
-        width: 100%;
-        border: 3px rgb(255, 173, 80) solid;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .txts2{
-        display: flex;
-        flex-direction: row  ;
-        height: 20%;
-        width: 100%;
-        border: 3px rgb(80, 170, 255) solid;
-        justify-content: space-around;
-        align-items: center;
-    }
-    /*Seccion dos*/
-    secciontres{
-        grid-area: secciontres;
-    }
-    .secciontres{
-        display: flex;
-        flex-direction: column  ;
-        border: 3px rgb(80, 255, 133) solid;
-        width: 100%;
-    }
-    .se3{
-        display: flex;
-        flex-direction: row  ;
-        height: 80%;
-        width: 100%;
-        border: 3px rgb(255, 173, 80) solid;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .txts3{
-        display: flex;
-        flex-direction: row  ;
-        height: 20%;
-        width: 100%;
-        border: 3px rgb(80, 170, 255) solid;
-        justify-content: space-around;
-        align-items: center;
-    }
 }

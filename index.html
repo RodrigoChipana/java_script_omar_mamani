@@ -7,17 +7,20 @@
     <title>Unique</title>
     <link rel="stylesheet" href="CSS/basic_style.css">
     <link rel="stylesheet" href="CSS/index.css">
-    <!--Font awesone no lo uso <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <!--Unicons--><link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
   <!--Encabezado-->  
     <header id="encabezado">
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
         <div class="perfil iconos" >
             <i class="uil uil-user-circle"></i>
         </div>
@@ -26,77 +29,98 @@
         </div>
         <div class="titulo">UNIQUE</div>
         <div class="noti iconos">
-            <i class="uil uil-bell"></i></div>
-        <div class="men iconos">
-            <i class="uil uil-bars"></i>
+            <i class="uil uil-bell"></i>
         </div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
+        <div class="dropdown iconos">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="--bs-btn-padding-y: .35rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .60rem;">
+            <i class="uil uil-bars"></i>
+        </button>
+        <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">Action</button></li>
+            <li><button class="dropdown-item" type="button">Another action</button></li>
+            <li><button class="dropdown-item" type="button">Something else here</button></li>
+        </ul>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
     </header>
 <!--Cuerpo-->
-    <section id="cuerpo">
+    <section id="cuerpo" class="mainindex">
         <div class="buscador">
             <div class="espa1"></div>
-            <div class="ibus">
-                <i class="uil uil-search"></i>
-            </div>
             <div class="bus">
-                <input type="text" name="" id="" placeholder="Leon, Perro, Gato...">
+                <form class="d-flex" role="search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  </form>
             </div>
             <div class="espa2"></div>
         </div>
-
-        <div class="principal slider">
-            <ul>
-                <li ><img src="Imagenes/Perros/1.jpg" alt="1"   ></li>
-                <li ><img src="Imagenes/Perros/2.jpg" alt="2"  ></li>
-                <li ><img src="Imagenes/Perros/3.jpg" alt="3"  ></li>
-                <li ><img src="Imagenes/Perros/4.jpg" alt="4"  ></li>
-            </ul>
+        <div class=" principal slider">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagenes/Leones/1.jpg" class="d-block w-100" alt="producto1" height="200px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/Leones/2.jpg" class="d-block w-100" alt="producto2" height="200px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/Leones/3.jpg" class="d-block w-100" alt="producto3" height="200px">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
-
-        <div class="seccionuno">
-            <div>Gatos</div>
-            <nav class="se1">
+        <div class="seccion seccionuno">
+            <div class="semititulo">Gatos</div>
+            <nav class="seccionimagenes">
                 <div><img src="imagenes/Gatos/g1.jpg" alt="gato 1" width="60px" height="60px"></div>
                 <div><img src="imagenes/Gatos/g2.jpg" alt="gato 2" width="60px" height="60px"></div>
                 <div><img src="imagenes/Gatos/g3.jpg" alt="gato 3" width="60px" height="60px"></div>
                 <div><img src="imagenes/Gatos/g5.jpg" alt="gato 4" width="60px" height="60px"></div>
             </nav>
-            <nav class="txts1">
+            <nav class="secciontexto secciondos">
                 <div>gato 1</div>
                 <div>gato 2</div>
                 <div>gato 3</div>
                 <div>gato 4</div>
             </nav>
         </div>
-        <div class="secciondos">
-            <div>Perros</div>
-            <nav class="se2">
+        <div class="seccion secciondos">
+            <div class="semititulo">Perros</div>
+            <nav class="seccionimagenes">
                 <div><img src="imagenes/Perros/1.jpg" alt="perro 1" width="60px" height="60px"></div>
                 <div><img src="imagenes/Perros/2.jpg" alt="perro 2" width="60px" height="60px"></div>
                 <div><img src="imagenes/Perros/3.jpg" alt="perro 3" width="60px" height="60px"></div>
                 <div><img src="imagenes/Perros/4.jpg" alt="perro 4" width="60px" height="60px"></div>
             </nav>
-            <nav class="txts2">
+            <nav class="secciontexto">
                 <div>perro 1</div>
                 <div>perro 2</div>
                 <div>perro 3</div>
                 <div>perro 4</div>
             </nav>
         </div>
-        <div class="secciontres">
-            <div>Leones</div>
-            <nav class="se3">
+        <div class="seccion secciontres">
+            <div class="semititulo">Leones</div>
+            <nav class="seccionimagenes">
                 <div><img src="imagenes/Leones/1.jpg" alt="leon 1" width="60px" height="60px"></div>
                 <div><img src="imagenes/Leones/2.jpg" alt="leon 2" width="60px" height="60px"></div>
                 <div><img src="imagenes/Leones/3.jpg" alt="leon 3" width="60px" height="60px"></div>
                 <div><img src="imagenes/Leones/4.jpg" alt="leon 4" width="60px" height="60px"></div>
             </nav>
-            <nav class="txts3">
+            <nav class="secciontexto">
                 <div>leon 1</div>
                 <div>leon 2</div>
                 <div>leon 3</div>
@@ -109,27 +133,27 @@
         <div class="iface">
             <i class="uil uil-facebook"></i>
         </div>
-        <div class="face centrarizq">facebook</div>
-        <div>.</div>
-        <div>.</div>
+        <div class="face redes">Facebook</div>
+        <div></div>
+        <div></div>
         <div class="itwi">
             <i class="uil uil-twitter"></i>
         </div>
-        <div class="twi centrarizq">twitter</div>
-        <div>.</div>
-        <div>.</div>
+        <div class="twi redes">Twitter</div>
+        <div></div>
+        <div></div>
         <div class="iyou">
             <i class="uil uil-youtube"></i>
         </div>
-        <div class="you centrarizq">youtube</div>
-        <div>.</div>
-        <div>.</div>
+        <div class="you redes">Youtube</div>
+        <div></div>
+        <div></div>
         <div class="iinsta">
             <i class="uil uil-instagram-alt"></i>
         </div>
-        <div class="insta centrarizq">instagram</div>
-        <div>.</div>
-        <div>.</div>
+        <div class="insta redes">Instagram</div>
+        <div></div>
+        <div></div>
     </footer>
 </body>
 </html>
