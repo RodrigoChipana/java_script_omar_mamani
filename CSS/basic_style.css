@@ -1,6 +1,9 @@
 body{margin: 0%;}
-
-@media only screen and (max-width: 480px){
+/*
+div{border: #00B3FF 2px solid;}
+*/
+@media only screen  and (min-width: 0px) and (max-width: 480px)
+{
     /*Encabezado*/
         #encabezado{
             display: grid;
@@ -11,7 +14,7 @@ body{margin: 0%;}
             "noti"
             "men"
             ;
-            grid-template-columns: 13%  12% 50% 12%  13%;
+            grid-template-columns: 13%  12% 0% 50% 12% 0% 13%;
             grid-template-rows: 25% 50% 25% ;
         }
         header{
@@ -50,6 +53,9 @@ body{margin: 0%;}
         .iconos{
             text-align: center; 
             font-size: 23px; 
+        }
+        .desaparece{
+            visibility: hidden
         }
     /*Pie de pagina*/   
         #pie{
@@ -132,3 +138,151 @@ body{margin: 0%;}
             font-family: 'Crimson Text', serif;
         }
 }
+
+@media only screen and (min-width: 481px){
+    /*Encabezado*/
+        #encabezado{
+            display: grid;
+            grid-template-areas: 
+            "perfil"
+            "shop"
+            "sell"
+            "titulo"
+            "noti"
+            "color"
+            "men"
+            ;
+            grid-template-columns: 4%  3% 3% 80% 3%  3% 4%;
+            grid-template-rows: 25% 50% 25% ;
+        }
+        header{
+            background: #000000;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+            height: 100px;
+            align-items: center;
+            border-bottom: 3px #efb810 solid ;
+        }
+        perfil{
+            grid-area: perfil;
+        }
+        shop{
+            grid-area: shop;
+        }
+        sell{
+            grid-area: sell;
+        }
+        titulo{
+            grid-area: titulo;
+        }
+        noti{
+            grid-area: noti;
+        }
+        ccolor{
+            grid-area: ccolor;
+        }
+        men{
+            grid-area: men;
+        }
+        .titulo{
+            font-size: 42px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Trirong", serif;
+            color: #daa520;
+        }
+        
+        .iconos{
+            text-align: center; 
+            font-size: 23px; 
+        }
+    /*Pie de pagina*/   
+        #pie{
+            display: grid;
+            grid-template-areas: 
+            "ifaceb"
+            "face"
+            "itwi"
+            "twi"
+            "iyou"
+            "you"
+            "iinsta"
+            "insta"
+            ;
+            grid-template-columns: 3%  37% 30% 30% ;
+            grid-template-rows: 25% 25% 25% 25% ;
+        }
+        footer{
+            background: #000000;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+            height: 150px;
+            align-items: center;
+            border-top: 3px #efb810 solid ;
+            padding-top: 5px;
+        }
+        iface{
+            grid-area: iface;
+        }
+        face{
+            grid-area: face;
+        }
+        itwi{
+            grid-area: itwi;
+        }
+        twi{
+            grid-area: twi;
+        }
+        iyou{
+            grid-area: iyou;
+        }
+        you{
+            grid-area: you;
+        }
+        iinsta{
+            grid-area: iinsta;
+        }
+        insta{
+            grid-area: insta;
+        }
+        .iface{
+            text-align: right;
+            font-size: 22px;
+            color: rgb(0, 4, 255);
+            padding-bottom: 8px;
+            padding-right: 4%;
+        }
+        .itwi{
+            text-align: right;
+            font-size: 22px;
+            color: #00B3FF;
+            padding-bottom: 4px;
+            padding-right: 4%;
+        }
+        .iyou{
+            text-align: right;
+            font-size: 22px;
+            color: #E43100;
+            padding-bottom: 2px;
+            padding-right: 4%;
+        }
+        .iinsta{
+            text-align: right;
+            font-size: 22px;
+            color: #ba68c8;
+            padding-bottom: 4px;
+            padding-right: 4%;
+        }
+        .centrarizq{
+            display: flex;
+            align-items: center;
+        }
+        .redes{
+            font-family: 'Crimson Text', serif;
+        }
+}
+
