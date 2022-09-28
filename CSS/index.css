@@ -113,8 +113,9 @@
         "secciontres"
         ;
         grid-template-columns: 100%;
-        grid-template-rows: 8% 32% 20% 21% 13%;
-        height: 1280px;
+        grid-template-rows: 7% 28% 20% 22% 14%;
+        height: 1420px;
+        
     }
     buscador{
         grid-area: buscador;
@@ -133,9 +134,13 @@
     }
 /*Main de Index*/
     .mainindex{
-                background: #000000;  /* fallback for old browsers */
+ /*               background: #000000;  /* fallback for old browsers */
+/*
                 background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*             background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                background: #ADA996;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
                 color: white;
                 align-items: center;
     }
@@ -158,29 +163,46 @@
     }
 /*Slider*/
     .slider{
-        width: 80%;
-        height: 450px;
         margin: auto;
         overflow: hidden; /*Ajusta para que la imagen no salga del div*/
-        padding-left: 13%;
-        padding-right: 13%;
-        padding-top: 0%;
+        width: 1105px;
     }
-    .ajustarima{
-        height: 450px;
-    }
+    
 /*Seccion*/
+    .navminiaturas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding-top: 5px;
+    }
+    .miniaturas{
+        padding: 20px;
+        margin-left: 4%;
+        margin-right: 4%;
+        background: #ECE9E6;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border: ridge 3px #daa520;
+        border-radius:10%;
+    }
     .semititulo{
         padding-left: 2%;
+        margin-top: 1%;
         font-size: 22px;
-        border-top: 1px rgb(172, 184, 176) solid;
+        border-top: 4px rgb(172, 184, 176) solid;
     }
     .seccion{
         display: flex;
         flex-direction: column  ;
         width: 100%;
+        color: #000000;
     }
-    .seccionimagenes{
+    .secciontres{
+        padding-top: 0%;
+        margin-top: 0%;
+    }
+    /*.seccionimagenes{
         height: 75%;
         width: 100%;
         display: flex;
@@ -189,18 +211,29 @@
         align-items: center;
         border-top: 1px rgb(172, 184, 176) solid;
         padding-top: 20px;
-    }
+        .secciontexto{
+            display: flex;
+            flex-direction: row  ;
+            height: 25%;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 18px;
+        }
+    }*/
     .miniatura{
         width: 120px;
         height: 120px;
     }
-    .secciontexto{
-        display: flex;
-        flex-direction: row  ;
-        height: 25%;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 18px;
+    .efectomini{
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 2);
+        cursor: default;
+        transition: all 400ms ease;
+    }
+    .efectomini:hover{
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+        transform: translate(-3%);
     }
 }

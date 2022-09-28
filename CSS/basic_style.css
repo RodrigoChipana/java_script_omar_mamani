@@ -194,95 +194,82 @@ div{border: #00B3FF 2px solid;}
             font-family: "Trirong", serif;
             color: #daa520;
         }
-        
         .iconos{
             text-align: center; 
             font-size: 23px; 
         }
-    /*Pie de pagina*/   
-        #pie{
-            display: grid;
-            grid-template-areas: 
-            "ifaceb"
-            "face"
-            "itwi"
-            "twi"
-            "iyou"
-            "you"
-            "iinsta"
-            "insta"
-            ;
-            grid-template-columns: 3%  37% 30% 30% ;
-            grid-template-rows: 25% 25% 25% 25% ;
-        }
+    /*Pie de pagina*/ 
+        #piesito{
+                display: grid;
+                grid-template-areas: 
+                ". . ."
+                "red texto contacto"
+                ". copyr .";
+                grid-template-columns: 30%  40% 30%  ;
+                grid-template-rows: 10% 80% 10%;
+                }
+                rede{
+                    grid-area: rede;
+                }
+                texto{
+                    grid-area: texto;
+                }
+                contacto{
+                    grid-area: contacto;
+                }
+                copyr{
+                    grid-area: copyr;
+                }    
+        .face{color: rgb(59, 62, 253);}
+        .twi{color: #00B3FF;}
+        .you{color: #E43100;}
+        .ins{color: #ba68c8;}
+        .lin{color: #2471d6;}
+        .cel{color: #fdfdfd;}
+        .wsa{color: rgb(92, 233, 57);}
+        .mai{color: #f54020;}
         footer{
             background: #000000;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             color: white;
-            height: 150px;
+            height: 220px;
             align-items: center;
             border-top: 3px #efb810 solid ;
             padding-top: 5px;
         }
-        iface{
-            grid-area: iface;
-        }
-        face{
-            grid-area: face;
-        }
-        itwi{
-            grid-area: itwi;
-        }
-        twi{
-            grid-area: twi;
-        }
-        iyou{
-            grid-area: iyou;
-        }
-        you{
-            grid-area: you;
-        }
-        iinsta{
-            grid-area: iinsta;
-        }
-        insta{
-            grid-area: insta;
-        }
-        .iface{
-            text-align: right;
-            font-size: 22px;
-            color: rgb(0, 4, 255);
-            padding-bottom: 8px;
-            padding-right: 4%;
-        }
-        .itwi{
-            text-align: right;
-            font-size: 22px;
-            color: #00B3FF;
-            padding-bottom: 4px;
-            padding-right: 4%;
-        }
-        .iyou{
-            text-align: right;
-            font-size: 22px;
-            color: #E43100;
-            padding-bottom: 2px;
-            padding-right: 4%;
-        }
-        .iinsta{
-            text-align: right;
-            font-size: 22px;
-            color: #ba68c8;
-            padding-bottom: 4px;
-            padding-right: 4%;
-        }
-        .centrarizq{
+        .social{
             display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            list-style: none;
+        }
+        .iconoytexto{
+            display: flex;
+            flex-direction: row;
+        }
+        .defaulticonofooter{
+            padding-right: 10px;
+            font-size: 22px;
+        }
+        .defaulttextofooter{
+            font-family: 'Crimson Text', serif;
+            font-size: 18px;
+        }
+        .efecto:hover{
+            color: #daa520;
+        }
+        .textofooter{
+            font-family: 'Crimson Text', serif;
+            display: flex;
+            flex-direction: column;
             align-items: center;
         }
-        .redes{
-            font-family: 'Crimson Text', serif;
+        .contactos{
+            display: flex;
+           padding-right: 25px;
+            flex-direction: column;
+            align-items: flex-end;
         }
 }
 
