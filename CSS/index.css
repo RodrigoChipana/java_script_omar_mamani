@@ -1,4 +1,5 @@
-@media only screen and (max-width: 480px){
+/*Celular*/
+    @media only screen and (max-width: 480px){
         #cuerpo{
             display: grid;
             grid-template-areas: 
@@ -9,8 +10,8 @@
             "secciontres"
             ;
             grid-template-columns: 100%;
-            grid-template-rows: 8% 32% 20% 20% 20%;
-            height: 750px;
+            grid-template-rows: 10% 20% 20% 20% 20%;
+            height: 800px;
         }
         buscador{
             grid-area: buscador;
@@ -27,213 +28,345 @@
         secciontres{
             grid-area: secciontres;
         }
-        
-    /*Main de Index*/
-        .mainindex{
-                    background: #000000;  /* fallback for old browsers */
-                    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-                    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                    color: white;
-                    height: 95px;
-                    align-items: center;
-        }
-    /*Buscador*/
+/*Main de Index*/
+        .cuerpoindex{
+            background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: #ADA996;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+            align-items: center;
+            }
+/*Buscador*/
         .buscador{
             display: flex;
             flex-direction: row;
             width: 100%;
             align-items: center;
-        }
+            }
         .espa1{
-            width: 9%;  
+            width: 5%;  
         }
         .bus{
-            width: 82%;
-            padding: 8px 0px 8px 8px;
+            width: 90%;
+            padding: 8px 3% 8px 3%;
         }
         .espa2{
-            width: 9%;  
-        width: 9%;  
-            width: 9%;  
+            width: 5%;  
         }
-    /*Slider*/
+/*Slider*/
         .slider{
-            width: 80%;
-            height: 90%;
             margin: auto;
             overflow: hidden; /*Ajusta para que la imagen no salga del div*/
+            width: 100%;
         }
-        .ajustarima{
-            height:210px;
+/*Seccion de miniaturas*/
+        .navminiaturas{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            padding-top: 5px;
         }
-        
-    /*Seccion*/
+        .desaparecer{
+            display:none !important;
+        }
+        .miniaturas{
+            margin-left: 5%;
+            margin-right: 5%;
+            background: #ECE9E6;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            border: ridge 3px #daa520;
+            border-radius:10%;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            height: 110px;
+            overflow: hidden;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 2);
+            cursor: default;
+            transition: all 400ms ease;
+        }
         .semititulo{
             padding-left: 2%;
-            border-top: 1px rgb(172, 184, 176) solid;
+            font-size: 18px;
+            border-top: 4px rgb(172, 184, 176) solid;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
         }
         .seccion{
             display: flex;
             flex-direction: column  ;
             width: 100%;
-            padding-bottom: 6px;
-        }
-        .seccionimagenes{
-            display: flex;
-            flex-direction: row  ;
-            height: 75%;
-            width: 100%;
-            justify-content: space-around;
-            align-items: center;
-            border-top: 1px rgb(172, 184, 176) solid;
-            padding-top: 10px;
+            color: #000000;
         }
         .miniatura{
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
         }
-        .secciontexto{
-            display: flex;
-            flex-direction: row  ;
-            height: 25%;
-            width: 100%;
-            justify-content: space-around;
-            align-items: center;
+        .precio{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: end;
         }
-}
+        .miniaturas:hover{
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+            transform: translate(-3%);
+        }
+    }
 
-@media only screen and (min-width: 481px){
-    #cuerpo{
-        display: grid;
-        grid-template-areas: 
-        "buscador"
-        "principal"
-        "seccionuno"
-        "secciondos"
-        "secciontres"
-        ;
-        grid-template-columns: 100%;
-        grid-template-rows: 7% 28% 20% 22% 14%;
-        height: 1420px;
-        
-    }
-    buscador{
-        grid-area: buscador;
-    }
-    principal{
-        grid-area: principal;
-    }
-    seccionuno{
-        grid-area: seccionuno;
-    }
-    secciondos{
-        grid-area: secciondos;
-    }
-    secciontres{
-        grid-area: secciontres;
-    }
+/*Netbook*/
+    @media only screen and (min-width: 481px)and (max-width: 1200px)
+    {
+/*Grilla*/
+            #cuerpo{
+                display: grid;
+                grid-template-areas: 
+                "buscador"
+                "principal"
+                "seccionuno"
+                "secciondos"
+                "secciontres"
+                ;
+                grid-template-columns: 100%;
+                grid-template-rows: 7% 29% 20% 20% 20%;
+                height: 1500px;
+            }
+            buscador{
+                grid-area: buscador;
+            }
+            principal{
+                grid-area: principal;
+            }
+            seccionuno{
+                grid-area: seccionuno;
+            }
+            secciondos{
+                grid-area: secciondos;
+            }
+            secciontres{
+                grid-area: secciontres;
+            }
 /*Main de Index*/
-    .mainindex{
- /*               background: #000000;  /* fallback for old browsers */
-/*
-                background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-/*             background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            .cuerpoindex{
+                background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
                 background: #ADA996;  /* fallback for old browsers */
                 background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
                 background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
                 color: white;
                 align-items: center;
-    }
+                }
 /*Buscador*/
-    .buscador{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-    }
-    .espa1{
-        width: 10%;  
-    }
-    .bus{
-        width: 80%;
-        padding: 8px 13% 8px 13%;
-    }
-    .espa2{
-    width: 10%;  
-    }
+            .buscador{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                align-items: center;
+                }
+            .espa1{
+                width: 10%;  
+            }
+            .bus{
+                width: 80%;
+                padding: 8px 13% 8px 13%;
+            }
+            .espa2{
+            width: 10%;  
+            }
 /*Slider*/
-    .slider{
-        margin: auto;
-        overflow: hidden; /*Ajusta para que la imagen no salga del div*/
-        width: 1105px;
+            .slider{
+                margin: auto;
+                overflow: hidden; /*Ajusta para que la imagen no salga del div*/
+                width: 100%;
+            }
+            .navgrande{
+                width: 105px;
+                height: 425px;
+            }
+/*Seccion de miniaturas*/
+            .desaparecermedio{
+                display:none !important;
+            }
+            .navminiaturas{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                padding-top: 5px;
+            }
+            .miniaturas{
+                padding: 3px;
+                margin-left: 4%;
+                margin-right: 4%;
+                background: #ECE9E6;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to left, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                border: ridge 3px #daa520;
+                border-radius:10%;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                text-align: center;
+                height: 220px;
+                overflow: hidden;
+                box-shadow: 0px 1px 10px rgba(0, 0, 0, 2);
+                cursor: default;
+                transition: all 400ms ease;
+            }
+            .semititulo{
+                padding-left: 2%;
+                font-size: 22px;
+                border-top: 4px rgb(172, 184, 176) solid;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+            }
+            .seccion{
+                display: flex;
+                flex-direction: column  ;
+                width: 100%;
+                color: #000000;
+            }
+            .miniatura{
+                width: 120px;
+                height: 120px;
+                border-radius:10%;
+            }
+            .precio{
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                text-align: end;
+            }
+            .miniaturas:hover{
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+                transform: translate(-3%);
+            }
     }
-    
-/*Seccion*/
-    .navminiaturas{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        padding-top: 5px;
-    }
-    .miniaturas{
-        padding: 20px;
-        margin-left: 4%;
-        margin-right: 4%;
-        background: #ECE9E6;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        border: ridge 3px #daa520;
-        border-radius:10%;
-    }
-    .semititulo{
-        padding-left: 2%;
-        margin-top: 1%;
-        font-size: 22px;
-        border-top: 4px rgb(172, 184, 176) solid;
-    }
-    .seccion{
-        display: flex;
-        flex-direction: column  ;
-        width: 100%;
-        color: #000000;
-    }
-    .secciontres{
-        padding-top: 0%;
-        margin-top: 0%;
-    }
-    /*.seccionimagenes{
-        height: 75%;
-        width: 100%;
-        display: flex;
-        flex-direction: row  ;
-        justify-content: space-around;
-        align-items: center;
-        border-top: 1px rgb(172, 184, 176) solid;
-        padding-top: 20px;
-        .secciontexto{
-            display: flex;
-            flex-direction: row  ;
-            height: 25%;
-            width: 100%;
-            justify-content: space-around;
-            align-items: center;
-            font-size: 18px;
+
+/*PC de escritorio*/
+    @media only screen and (min-width: 1201px){
+/*Grilla*/
+        #cuerpo{
+            display: grid;
+            grid-template-areas: 
+            "buscador"
+            "principal"
+            "seccionuno"
+            "secciondos"
+            "secciontres"
+            ;
+            grid-template-columns: 100%;
+            grid-template-rows: 7% 29% 20% 20% 20%;
+            height: 1500px;
         }
-    }*/
-    .miniatura{
-        width: 120px;
-        height: 120px;
-    }
-    .efectomini{
-        overflow: hidden;
-        background-color: #fff;
-        box-shadow: 0px 1px 10px rgba(0, 0, 0, 2);
-        cursor: default;
-        transition: all 400ms ease;
-    }
-    .efectomini:hover{
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
-        transform: translate(-3%);
-    }
+        buscador{
+            grid-area: buscador;
+        }
+        principal{
+            grid-area: principal;
+        }
+        seccionuno{
+            grid-area: seccionuno;
+        }
+        secciondos{
+            grid-area: secciondos;
+        }
+        secciontres{
+            grid-area: secciontres;
+        }
+/*Main de Index*/
+        .cuerpoindex{
+            background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: #ADA996;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+            align-items: center;
+            
+            }
+/*Buscador*/
+        .buscador{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            }
+        .espa1{
+            width: 10%;  
+        }
+        .bus{
+            width: 80%;
+            padding: 8px 13% 8px 13%;
+        }
+        .espa2{
+        width: 10%;  
+        }
+/*Slider*/
+        .slider{
+            margin: auto;
+            overflow: hidden; /*Ajusta para que la imagen no salga del div*/
+            width: 100%;
+        }
+        .navgrande{
+            width: 105px;
+            height: 425px;
+        }
+/*Seccion de miniaturas*/
+        .navminiaturas{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            padding-top: 5px;
+        }
+        .miniaturas{
+            padding: 8px 4px 4px 4px;
+            margin-left: 3%;
+            margin-right: 3%;
+            background: #ECE9E6;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            border: ridge 3px #daa520;
+            border-radius:10%;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            height: 220px;
+            overflow: hidden;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 2);
+            cursor: default;
+            transition: all 400ms ease;
+        }
+        .semititulo{
+            padding-left: 2%;
+            font-size: 22px;
+            border-top: 4px rgb(172, 184, 176) solid;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+        }
+        .seccion{
+            display: flex;
+            flex-direction: column  ;
+            width: 100%;
+            color: #000000;
+        }
+        .miniatura{
+            width: 130px;
+            height: 130px;
+            border-radius:10%;
+        }
+        .precio{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: end;
+        }
+        .miniaturas:hover{
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+            transform: translate(-3%);
+        }
 }
