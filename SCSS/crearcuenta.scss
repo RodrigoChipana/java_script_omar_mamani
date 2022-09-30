@@ -1,0 +1,199 @@
+@media only screen and (max-width: 480px){
+    
+            #cuerpo{
+                display: grid;
+                grid-template-areas: 
+                "subtitulo"
+                "formulario"
+                "termino"
+                "boton"
+                ;
+                grid-template-columns: 100%;
+                grid-template-rows: 15% 37% 18% 30%;
+                height: 540px;
+                width: 100%;
+                font-family: 'Open Sans', sans-serif;
+                background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                background: #ADA996;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                color: rgb(0, 0, 0);
+                    }
+                    subtitulo{
+                        grid-area: subtitulo;
+                    }
+                    formulario{
+                        grid-area: formulario;
+                    }
+                    termino{
+                        grid-area: termino;
+                    }
+                    boton{
+                        grid-area: boton;
+                    }
+            h3.subtitulo{
+                color: rgb(0, 0, 0); text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center;
+                font-size: 32PX;
+                font-family: Copperplate;
+                border-radius:3%;
+                padding: 11px;
+                margin-top: 1%;
+            }
+            div.formulario{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding-right: 20%;
+                font-size: 16px;
+                }
+            div.termino{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                font-size: 14px;
+            }
+            div.boton{
+                text-align: center;
+                }
+             footer{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+             }   
+}
+@media only screen and (min-width: 481px) and (max-width: 800px)
+{
+    #cuerpo{
+        display: grid;
+        grid-template-areas: 
+        "subtitulo"
+        "formulario"
+        "termino"
+        "boton"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 37% 18% 30%;
+        height: 615px;
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #ADA996;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: rgb(0, 0, 0);
+            }
+            subtitulo{
+                grid-area: subtitulo;
+            }
+            formulario{
+                grid-area: formulario;
+            }
+            termino{
+                grid-area: termino;
+            }
+            boton{
+                grid-area: boton;
+            }
+    h3.subtitulo{
+        color: rgb(0, 0, 0); text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center;
+        font-size: 36PX;
+        font-family: Copperplate;
+        border-radius:3%;
+        padding: 11px;
+        margin-top: 1%;
+    }
+    div.formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 36%;
+        padding-top: 10px;
+        font-size: 16px;
+        }
+    div.termino{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 14px;
+    }
+    div.boton{
+        text-align: center;
+        }
+     footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+     }
+}
+@media only screen and (min-width: 801px){
+    
+    #cuerpo{
+        display: grid;
+        grid-template-areas: 
+        "subtitulo"
+        "formulario"
+        "termino"
+        "boton"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 37% 18% 30%;
+        height: 615px;
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #ADA996;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        color: rgb(0, 0, 0);
+            }
+            subtitulo{
+                grid-area: subtitulo;
+            }
+            formulario{
+                grid-area: formulario;
+            }
+            termino{
+                grid-area: termino;
+            }
+            boton{
+                grid-area: boton;
+            }
+    h3.subtitulo{
+        color: rgb(0, 0, 0); text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center;
+        font-size: 36PX;
+        font-family: Copperplate;
+        border-radius:3%;
+        padding: 11px;
+        margin-top: 1%;
+    }
+    div.formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 41%;
+        padding-top: 10px;
+        font-size: 16px;
+        }
+    div.termino{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 14px;
+    }
+    div.boton{
+        text-align: center;
+        }
+     footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+     }
+}
+            
