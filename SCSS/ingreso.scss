@@ -1,0 +1,122 @@
+@import 'default';
+@media only screen and (max-width: 480px){
+    #cuerpo{
+        display: grid;
+        grid-template-areas: 
+        "subtitulo"
+        "formulario"
+        "ingresar"
+        "texto"
+        "registrarse"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 25% 30% 5% 10%;
+        height: 620px;
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(0, 0, 0);
+            }
+            subtitulo{
+                grid-area: subtitulo;
+            }
+            formulario{
+                grid-area: formulario;
+            }
+            ingresar{
+                grid-area: ingresar;
+            }
+            texto{
+                grid-area: texto;
+            }
+            registrarse{
+                grid-area: registrarse;
+            }
+            main{
+            
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                div.formulario{
+                    align-items: flex-end;
+                    justify-content: center;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+                
+                div.ingresar{
+                    width: 20%; 
+                    margin-left: 40%;
+                }
+                div.texto{
+                    color: white;
+                }
+                div.registrarse{
+                    width: 20%; 
+                    margin-left: 40%; 
+                }
+            }
+}
+
+@media only screen and (min-width: 481px){
+    #cuerpo{
+        display: grid;
+        grid-template-areas: 
+        "subtitulo"
+        "formulario"
+        "ingresar"
+        "texto"
+        "registrarse"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 25% 30% 5% 10%;
+        height: 620px;
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(0, 0, 0);
+            }
+            subtitulo{
+                grid-area: subtitulo;
+            }
+            formulario{
+                grid-area: formulario;
+            }
+            ingresar{
+                grid-area: ingresar;
+            }
+            texto{
+                grid-area: texto;
+            }
+            registrarse{
+                grid-area: registrarse;
+            }
+        main{
+            
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            div.formulario{
+                align-items: flex-end;
+                justify-content: center;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            
+            div.ingresar{
+                width: 20%; 
+                margin-left: 40%;
+            }
+            div.texto{
+                color: white;
+            }
+            div.registrarse{
+                width: 20%; 
+                margin-left: 40%; 
+            }
+        }
+}

@@ -84,10 +84,10 @@ main {
 @media only screen and (max-width: 480px) {
   #cuerpo {
     display: grid;
-    grid-template-areas: "subtitulo" "formulario" "termino" "boton";
+    grid-template-areas: "subtitulo" "formulario" "ingresar" "texto" "registrarse";
     grid-template-columns: 100%;
-    grid-template-rows: 15% 55% 10% 20%;
-    height: 540px;
+    grid-template-rows: 15% 25% 30% 5% 10%;
+    height: 620px;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     color: black; }
@@ -95,46 +95,38 @@ main {
     grid-area: subtitulo; }
   formulario {
     grid-area: formulario; }
-  termino {
-    grid-area: termino; }
-  boton {
-    grid-area: boton; }
-  div.formulario {
+  ingresar {
+    grid-area: ingresar; }
+  texto {
+    grid-area: texto; }
+  registrarse {
+    grid-area: registrarse; }
+  main div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
-    font-size: 16px; }
-  div.termino {
-    display: flex;
-    flex-direction: column;
+    justify-content: center; }
+  main div.formulario {
+    align-items: flex-end;
     justify-content: center;
+    justify-content: flex-end;
     align-items: center; }
-    div.termino form {
-      font-size: 14px;
-      color: #FFFFFF; }
-      div.termino form input {
-        margin: 0%;
-        padding: 0%; }
-  div.boton {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 35%;
-    width: 30%; }
-  footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; } }
+  main div.ingresar {
+    width: 20%;
+    margin-left: 40%; }
+  main div.texto {
+    color: white; }
+  main div.registrarse {
+    width: 20%;
+    margin-left: 40%; } }
 
-@media only screen and (min-width: 481px) and (max-width: 800px) {
+@media only screen and (min-width: 481px) {
   #cuerpo {
     display: grid;
-    grid-template-areas: "subtitulo" "formulario" "termino" "boton";
+    grid-template-areas: "subtitulo" "formulario" "ingresar" "texto" "registrarse";
     grid-template-columns: 100%;
-    grid-template-rows: 15% 55% 10% 20%;
-    height: 615px;
+    grid-template-rows: 15% 25% 30% 5% 10%;
+    height: 620px;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     color: black; }
@@ -142,82 +134,27 @@ main {
     grid-area: subtitulo; }
   formulario {
     grid-area: formulario; }
-  termino {
-    grid-area: termino; }
-  boton {
-    grid-area: boton; }
-  div.formulario {
+  ingresar {
+    grid-area: ingresar; }
+  texto {
+    grid-area: texto; }
+  registrarse {
+    grid-area: registrarse; }
+  main div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
-    font-size: 16px; }
-  div.termino {
-    display: flex;
-    flex-direction: column;
+    justify-content: center; }
+  main div.formulario {
+    align-items: flex-end;
     justify-content: center;
+    justify-content: flex-end;
     align-items: center; }
-    div.termino form {
-      font-size: 14px;
-      color: #FFFFFF; }
-      div.termino form input {
-        margin: 0%;
-        padding: 0%; }
-  div.boton {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 35%;
-    width: 22%; }
-  footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; } }
-
-@media only screen and (min-width: 801px) {
-  #cuerpo {
-    display: grid;
-    grid-template-areas: "subtitulo" "formulario" "termino" "boton";
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 55% 10% 20%;
-    height: 593px;
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    color: black; }
-  subtitulo {
-    grid-area: subtitulo; }
-  formulario {
-    grid-area: formulario; }
-  termino {
-    grid-area: termino; }
-  boton {
-    grid-area: boton; }
-  div.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-    font-size: 16px; }
-  div.termino {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    div.termino form {
-      font-size: 14px;
-      color: #FFFFFF; }
-      div.termino form input {
-        margin: 0%;
-        padding: 0%; }
-  div.boton {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 45%;
-    width: 10%; }
-  footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; } }
+  main div.ingresar {
+    width: 20%;
+    margin-left: 40%; }
+  main div.texto {
+    color: white; }
+  main div.registrarse {
+    width: 20%;
+    margin-left: 40%; } }

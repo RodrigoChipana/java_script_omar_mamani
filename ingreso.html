@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ingreso</title>
+    <title>Ingreso</title>
     <link rel="stylesheet" href="CSS/basic_style.css">
-    <link rel="stylesheet" href="CSS/ingreso.css">
-    <!--Font awesone no lo uso <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="CSS/ingresocss.css">
     <!--Unicons--><link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
-
 <body>
-<!--Encabezado-->  
-<header id="encabezado">
+  <!--Encabezado-->  
+  <header id="encabezado">
     <div></div>
     <div></div>
     <div></div>
@@ -31,21 +29,21 @@
     <div class="shop iconos">
         <i class="uil uil-store-alt"></i>
     </div>
-    <div class="sell iconos desaparece">
+    <div class="sell iconos ocultar">
         <i class="uil uil-tag-alt"></i>
     </div>
     <div class="titulo">UNIQUE</div>
     <div class="noti iconos">
         <i class="uil uil-bell"></i>
     </div>
-    <div class="ccolor iconos desaparece">
+    <div class="ccolor iconos ocultar">
         <i class="uil uil-adjust"></i>
     </div>
-    <div class="dropdown iconos">
+    <div class="noti  dropdown iconos">
        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="--bs-btn-padding-y: .35rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .60rem;">
         <i class="uil uil-bars"></i>
       </button>
-      <ul class="dropdown-menu">
+      <ul class=" men dropdown-menu ">
         <li><button class="dropdown-item" type="button">
             <a href="index.html">Inicio</a>
         </button></li>
@@ -64,60 +62,86 @@
 </header>
     
 <!--CUERPO-->
-    <div class="ctop">
-        <div class="bienvenido ">
-            Bienvenido
-        </div>
-        <div class="alinearform">
-            <div>
-                <form>
-                    <label  for="user">User:</label>
-                    <input type="text " id="user"name="user">
-                </form>
-            </div>
-            <div>
-                <form>
-                    <label  for="password">Password:</label>
-                    <input type="password" id="password"name="password" >
-                </form>
-            </div>
+<main id="cuerpo">
+    <div class="subtitulo">
+        <h3>Bienvenido</h3>
+    </div>
+    <div class="formulario">
+        <div>
+            <form>
+                <input type="text " id="user"placeholder="Usuario" required="required">
+            </form>
         </div>
         <div>
-            <input type="submit" value="Login" class="btn btn-primary">
+            <form>
+                <input type="password" id="password"placeholder="Contrase&ntilde;a" required="required" >
+            </form>
         </div>
     </div>
-    <div class="cbot ">
-        <div >No tengo cuenta, deseo registrarme</div>
-        <div>
-            <input type="button" value="Sign In" class="btn btn-primary">
-        </div>
+    <div class="ingresar">
+        <input type="submit" value="Login" class="btn btn-secondary me-md-2 ">
     </div>
+    <div class="texto">
+        <p>No tengo cuenta, deseo registrarme</p>
+    </div>
+    <div class="registrarse">
+        <input type="button" value="Sign In" class="btn btn-secondary me-md-2 ">
+    </div>
+</main>
+    
    
 <!--Pie-->
-<footer id="pie">
-    <div class="iface">
-        <i class="uil uil-facebook"></i>
+<footer id="piesito">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div>
+        <ul class="social red">
+            <div class="iconoytexto">
+                <li class="face defaulticonofooter"><i class="uil uil-facebook efecto"></i></li>
+                <p class="defaulttextofooter">Facebook</p>
+            </div>
+            <div class="iconoytexto">
+                <li class="twi defaulticonofooter"><i class="uil uil-twitter efecto"></i></li>
+                <p class="defaulttextofooter">Twitter</p>
+            </div>
+            <div class="iconoytexto">
+                <li class="you defaulticonofooter"><i class="uil uil-youtube efecto"></i></li>
+                <p class="defaulttextofooter">Youtube</p>
+            </div>
+            <div class="iconoytexto">
+                <li class="ins defaulticonofooter"><i class="uil uil-instagram-alt efecto"></i></li>
+                <p class="defaulttextofooter">Instagram</p>
+            </div>
+        </ul>
     </div>
-    <div class="face redes">Facebook</div>
-    <div></div>
-    <div></div>
-    <div class="itwi">
-        <i class="uil uil-twitter"></i>
+    <div class="textofooter desaparecer texto">
+        <p>Consequatur est animi dolorum ut a magnam, ullam ipsa, officia nobis quod eos quia harum hic dolore atque, tempora soluta facere exercitationem!</p>
     </div>
-    <div class="twi redes">Twitter</div>
-    <div></div>
-    <div></div>
-    <div class="iyou">
-        <i class="uil uil-youtube"></i>
+    <div class="contactos desaparecer contacto">
+        <ul class="social">
+            <div class="iconoytexto">
+                <li class="lin defaulticonofooter"><i class="uil uil-linkedin-alt"></i></li>
+                <p class="defaulttextofooter">Linkedin</p>
+            </div>
+            <div class="iconoytexto">
+                <li class="cel defaulticonofooter"><i class="uil uil-mobile-android"></i></li>
+                <p class="defaulttextofooter">Celular</p>
+            </div>
+            <div class="iconoytexto">
+                <li class="wsa defaulticonofooter"><i class="uil uil-whatsapp"></i></li>
+                <p class="defaulttextofooter">Whatsapp</p>
+            </div>
+            <div class="iconoytexto">
+                <li class="mai defaulticonofooter"><i class="uil uil-envelope"></i></li>
+                <p class="defaulttextofooter">Mail</p>
+            </div>
+        </ul>
     </div>
-    <div class="you redes">Youtube</div>
     <div></div>
-    <div></div>
-    <div class="iinsta">
-        <i class="uil uil-instagram-alt"></i>
+    <div class="textofooter desaparecer copyr">
+        <p>Copyright &copy;2022 UNIQUE designed by Rodrigo Chipana</p>
     </div>
-    <div class="insta redes">Instagram</div>
-    <div></div>
     <div></div>
 </footer>
 </body>
