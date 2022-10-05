@@ -181,7 +181,7 @@ main {
     grid-template-areas: "subtitulo" "formulario" "termino" "boton";
     grid-template-columns: 100%;
     grid-template-rows: 15% 55% 10% 20%;
-    height: 593px;
+    height: 615px;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     color: black; }

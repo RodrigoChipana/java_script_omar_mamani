@@ -1,43 +1,133 @@
-@media only screen and (max-width: 480px){
-        #mproducto{
-                display: grid;
-                grid-template-areas: 
-                "fotop"
-                "descp"
-                ;
-                grid-template-columns:  100%;
-                grid-template-rows:  50% 50%    ;
-                height: 750px;
-                border: 2px rgb(58, 228, 6) solid;
-            }
-            fotop{
-                grid-area: fotop;
-            }
-            descp{
-                grid-area: descp;
-            }
-            .descp{
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                height: 100%;
-                
-                
-            }
-            .titulo_descripcion{
-                height: 60px;
-                display: flex;
-                justify-items: center;
-                justify-content: center;
-                align-items: center;
-            }
-            .descripcion{
-                height: 280px;
-                padding-left: 3%;
-                
-            }
-            .terminos{
-                font-size: 12px;
-                padding-left: 3%;
-            }
-}
+@media only screen and (max-width: 480px) {
+  #mproducto {
+    display: grid;
+    grid-template-areas: "fotop" "descp";
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    height: 750px; }
+  fotop {
+    grid-area: fotop; }
+  descp {
+    grid-area: descp; }
+  .foto {
+    width: 100%;
+    height: 380px; }
+  div.descp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-left: 3%;
+    font-family: 'Open Sans', sans-serif; }
+    div.descp div.titulo_descripcion {
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      font-weight: bold; }
+    div.descp div.descripcion {
+      height: 280px;
+      font-size: 16px; }
+    div.descp div.boton {
+      padding-bottom: 3%; }
+    div.descp div.terminos {
+      font-size: 12px;
+      width: 95%; } }
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+  #mproducto {
+    display: grid;
+    grid-template-areas: "fotop" "descp";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    height: 480px; }
+  fotop {
+    grid-area: fotop; }
+  descp {
+    grid-area: descp; }
+  main {
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 80px; }
+    main div.fotop .foto {
+      width: 310px;
+      height: 310px;
+      margin-left: 5%; }
+    main div.descp {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-left: 3%;
+      font-family: 'Open Sans', sans-serif;
+      height: 400px; }
+      main div.descp div.titulo_descripcion {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: bold; }
+      main div.descp div.descripcion {
+        height: 280px;
+        font-size: 16px; }
+      main div.descp div.boton {
+        padding-bottom: 3%; }
+      main div.descp div.terminos {
+        font-size: 12px;
+        width: 95%; } }
+
+@media only screen and (min-width: 481px) {
+  #mproducto {
+    display: grid;
+    grid-template-areas: "fotop" "descp";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    height: 535px; }
+  fotop {
+    grid-area: fotop; }
+  descp {
+    grid-area: descp; }
+  main {
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 80px; }
+    main div.fotop .foto {
+      width: 410px;
+      height: 410px;
+      margin-left: 25%; }
+    main div.descp {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-left: 3%;
+      font-family: 'Open Sans', sans-serif;
+      height: 400px; }
+      main div.descp div.titulo_descripcion {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: bold; }
+      main div.descp div.descripcion {
+        height: 280px;
+        font-size: 16px; }
+      main div.descp div.boton {
+        padding-bottom: 3%; }
+      main div.descp div.terminos {
+        font-size: 12px;
+        width: 95%; } }

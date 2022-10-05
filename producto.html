@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto</title>
-    <link rel="stylesheet" href="CSS/basic_style.css">
-    <link rel="stylesheet" href="CSS/producto.css">
-    <!--Font awesone no lo uso <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <!--Unicons--><link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ingreso</title>
+        <link rel="stylesheet" href="CSS/basic_style.css">
+        <link rel="stylesheet" href="CSS/producto.css">
+        <!--Unicons--><link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
 <body>
 <!--Encabezado-->  
 <header id="encabezado">
@@ -26,27 +29,40 @@
     <div class="shop iconos">
         <i class="uil uil-store-alt"></i>
     </div>
-    <div class="sell iconos desaparece">
+    <div class="sell iconos ocultar">
         <i class="uil uil-tag-alt"></i>
     </div>
-    <div class="titulo">UNIQUE</div>
+    <div class="titulo"  >
+        <h1 >
+            <a href="index.html" class="titulo" style="color: #daa520 !important;">UNIQUE</a>
+        </h1>
+    </div>
     <div class="noti iconos">
         <i class="uil uil-bell"></i>
     </div>
-    <div class="ccolor iconos desaparece">
+    <div class="ccolor iconos ocultar">
         <i class="uil uil-adjust"></i>
     </div>
-    <div class="dropdown iconos">
+    <div class="noti  dropdown iconos">
        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="--bs-btn-padding-y: .35rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .60rem;">
         <i class="uil uil-bars"></i>
       </button>
-      <ul class="dropdown-menu">
-        <li><button class="dropdown-item" type="button">
-            <a href="index.html">Inicio</a>
-        </button></li>
-        <li><button class="dropdown-item" type="button">
-            <a href="crear_cuenta.html">Crear cuenta</a>
-        </button></li>
+      <ul class=" men dropdown-menu ">
+        <li>
+            <button class="dropdown-item border" type="button">
+            <a href="ingreso.html" style="text-decoration:none;">Ingresar</a>
+            </button>
+        </li>
+        <li>
+            <button class="dropdown-item" type="button">
+            <a href="crear_cuenta.html" style="text-decoration:none;">Crear cuenta</a>
+            </button>
+        </li>
+        <li>
+            <button class="dropdown-item" type="button">
+            <a href="perfil.html" style="text-decoration:none;">Verificar perfil</a>
+            </button>
+        </li>
       </ul>
     </div>
     <div></div>
@@ -60,9 +76,8 @@
 <!--Cuerpo-->
     <main id="mproducto">
         <div class="fotop">
-            <img src="imagenes/Gatos/g3.jpg" alt="gatito" width="100%" height="100%">
+            <img src="imagenes/Gatos/g3.jpg" alt="gatito" class="foto" >
         </div>
-        
         <div class="descp">
                 <div class="titulo_descripcion">
                     Arte espacial
@@ -76,8 +91,8 @@
                     <p> Fecha de publicación: 13/08/2022</p>
                     <p  >$5000</p>
                 </div>
-                <div>
-                    <input type="button" value="Comprar">
+                <div class="boton">
+                    <input type="submit" value="Comprar" class="btn btn-secondary me-md-2 ">
                 </div>
                 <div class="terminos">
                     <p>Recuerde que el comprar, ofertar y ofrecer un articulo
@@ -91,30 +106,57 @@
     </main>
 
 <!--Pie-->
-<footer id="pie">
-    <div class="iface">
-        <i class="uil uil-facebook"></i>
+<footer id="piesito">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div>
+        <ul class="social red">
+            <div class="iconoytexto">
+                <li class="face defaulticonofooter"><i class="uil uil-facebook efecto"></i></li>
+                <p class="defaulttextofooter">Facebook</p>
+            </div>
+            <div class="iconoytexto">
+                <li class="twi defaulticonofooter"><i class="uil uil-twitter efecto"></i></li>
+                <p class="defaulttextofooter">Twitter</p>
+            </div>
+            <div class="iconoytexto">
+                <li class="you defaulticonofooter"><i class="uil uil-youtube efecto"></i></li>
+                <p class="defaulttextofooter">Youtube</p>
+            </div>
+            <div class="iconoytexto">
+                <li class="ins defaulticonofooter"><i class="uil uil-instagram-alt efecto"></i></li>
+                <p class="defaulttextofooter">Instagram</p>
+            </div>
+        </ul>
     </div>
-    <div class="face redes">Facebook</div>
-    <div></div>
-    <div></div>
-    <div class="itwi">
-        <i class="uil uil-twitter"></i>
+    <div class="textofooter desaparecer texto">
+        <p>Consequatur est animi dolorum ut a magnam, ullam ipsa, officia nobis quod eos quia harum hic dolore atque, tempora soluta facere exercitationem!</p>
     </div>
-    <div class="twi redes">Twitter</div>
-    <div></div>
-    <div></div>
-    <div class="iyou">
-        <i class="uil uil-youtube"></i>
+    <div class="contactos desaparecer contacto">
+        <ul class="social">
+            <div class="iconoytexto">
+                <li class="lin defaulticonofooter"><i class="uil uil-linkedin-alt"></i></li>
+                <p class="defaulttextofooter">Linkedin</p>
+            </div>
+            <div class="iconoytexto">
+                <li class="cel defaulticonofooter"><i class="uil uil-mobile-android"></i></li>
+                <p class="defaulttextofooter">Celular</p>
+            </div>
+            <div class="iconoytexto">
+                <li class="wsa defaulticonofooter"><i class="uil uil-whatsapp"></i></li>
+                <p class="defaulttextofooter">Whatsapp</p>
+            </div>
+            <div class="iconoytexto">
+                <li class="mai defaulticonofooter"><i class="uil uil-envelope"></i></li>
+                <p class="defaulttextofooter">Mail</p>
+            </div>
+        </ul>
     </div>
-    <div class="you redes">Youtube</div>
     <div></div>
-    <div></div>
-    <div class="iinsta">
-        <i class="uil uil-instagram-alt"></i>
+    <div class="textofooter desaparecer copyr">
+        <p>Copyright &copy;2022 UNIQUE designed by Rodrigo Chipana</p>
     </div>
-    <div class="insta redes">Instagram</div>
-    <div></div>
     <div></div>
 </footer>
 </body>
