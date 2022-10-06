@@ -1,4 +1,16 @@
 @import 'default';
+@mixin flexcolcenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+@mixin flexendcenter{
+    align-items: flex-end;
+    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    }
 @media only screen and (max-width: 480px){
     #cuerpo{
         display: grid;
@@ -34,16 +46,10 @@
             main{
             
                 div{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
+                    @include flexcolcenter;
                 }
                 div.formulario{
-                    align-items: flex-end;
-                    justify-content: center;
-                    justify-content: flex-end;
-                    align-items: center;
+                    @include flexendcenter;
                 }
                 
                 div.ingresar{
@@ -95,16 +101,10 @@
         main{
             
             div{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                @include flexcolcenter;
             }
             div.formulario{
-                align-items: flex-end;
-                justify-content: center;
-                justify-content: flex-end;
-                align-items: center;
+                @include flexendcenter;
             }
             
             div.ingresar{

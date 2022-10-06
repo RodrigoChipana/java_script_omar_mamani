@@ -44,6 +44,7 @@ div{border: #00B3FF 2px solid;}
             justify-content: center;
             font-family: "Trirong", serif;
             color: #daa520;
+            text-decoration:none;
         }
         noti{
             grid-area: noti;
@@ -188,6 +189,7 @@ div{border: #00B3FF 2px solid;}
             justify-content: center;
             font-family: "Trirong", serif;
             color: #daa520;
+            text-decoration:none;
         }
         noti{
             grid-area: noti;

@@ -27,8 +27,8 @@
     main div.cuerpo {
       display: flex;
       flex-direction: column;
-      justify-items: center;
-      align-items: center; }
+      align-items: center;
+      justify-items: center; }
       main div.cuerpo div.ctop {
         display: flex;
         flex-direction: column;
