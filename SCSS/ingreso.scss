@@ -22,7 +22,7 @@
         "registrarse"
         ;
         grid-template-columns: 100%;
-        grid-template-rows: 15% 25% 30% 5% 10%;
+        grid-template-rows: 15% 20% 20% 25% 20%;
         height: 620px;
         width: 100%;
         font-family: 'Open Sans', sans-serif;
@@ -52,16 +52,12 @@
                     @include flexendcenter;
                 }
                 
-                div.ingresar{
-                    width: 20%; 
-                    margin-left: 40%;
-                }
+                a{
+                    width: 35%; 
+            }
                 div.texto{
                     color: white;
-                }
-                div.registrarse{
-                    width: 20%; 
-                    margin-left: 40%; 
+                    padding-top: 40%;
                 }
             }
 }
@@ -106,17 +102,11 @@
             div.formulario{
                 @include flexendcenter;
             }
-            
-            div.ingresar{
-                width: 20%; 
-                margin-left: 40%;
+            a{
+                    width: 20%; 
             }
             div.texto{
                 color: white;
-            }
-            div.registrarse{
-                width: 20%; 
-                margin-left: 40%; 
             }
         }
 }
