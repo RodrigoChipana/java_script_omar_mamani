@@ -1,4 +1,6 @@
-
+/*div{
+    border: blue solid 2px;
+}*/
 @media only screen and (max-width: 700px){
     #mproducto{
         display: grid;
@@ -28,6 +30,8 @@
             div.fotop{
                 display: flex;
                 justify-content: center;
+                margin-left: 10%;
+                margin-right: 10%;
                 .foto{
                     width: 380px;
                     height: 400px;
@@ -41,6 +45,11 @@
                 margin: 4% 1% 1% 15%;
                 padding:  1% 1% 2% 0%;
                 border: ridge 1px #daa520;
+                li.precio{
+                    font-size: 22px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bolder;
+                }
                 ul.terminos{
                     font-size: 12px;
                     }
@@ -83,6 +92,8 @@
             div.fotop{
                 display: flex;
                 justify-content: center;
+                margin-left: 10%;
+                margin-right: 10%;
                 .foto{
                     width: 600px;
                     height: 630px;
@@ -95,9 +106,14 @@
                 width: 18rem;
                 border: ridge 1px #daa520;
                 margin: 4% 1% 1% 35%;
-                padding:  1% 5% 2% 0%;
+                padding:  1% 0% 2% 0%;
+                li.precio{
+                    font-size: 22px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bolder;
+                }
                 ul.terminos{
-                    font-size: 12px;
+                    font-size: 11px;
                     }
                 div.sele{
                     select{
@@ -112,6 +128,7 @@
 
 
 @media only screen and (min-width: 1001px){
+    
     #mproducto{
             display: grid;
             grid-template-areas: 
@@ -119,9 +136,9 @@
             "fotop"
             "descp"
             ;
-            grid-template-columns:  10% 60% 30%;
+            grid-template-columns:10% 60% 30%;
             grid-template-rows:  100%;
-            height: 555px;
+            height: 580px;
         }
         mini{
             grid-area: mini;
@@ -136,7 +153,8 @@
             background: #ECE9E6;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            margin-top: 60px;
+            margin-top: 40px; 
+            
             .mini{
                 display: flex;
                 flex-direction: column;
@@ -165,10 +183,10 @@
                     }
                 }
             div.fotop{
+                margin-left: 30%;
+                margin-right: 7%;
                 .foto{
-                    width: 510px;
                     height: 510px;
-                    margin-left: 16%;
                     border: ridge 3px #daa520;
                     border-radius:3%;
                 }
@@ -178,6 +196,12 @@
                 width: 18rem;
                 border: ridge 1px #daa520;
                 padding:  1% 0% 2% 0%;
+                margin-left: 8%;
+                li.precio{
+                    font-size: 22px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bolder;
+                }
                 ul.terminos{
                     font-size: 12px;
                     }
