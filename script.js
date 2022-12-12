@@ -136,7 +136,6 @@ while (welcome != "3") {
                                     case "1":
                                         console.log("Se compro el producto");
                                         console.log(zapatillas[0]);
-                                        alert("myObject is " + zapatillas[0]);
                                         break;
                                     case "2":
                                         console.log("Se compro el producto");
