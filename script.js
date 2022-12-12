@@ -261,8 +261,8 @@ while (welcome != "3") {
 
 
         default:
-            alert("Por favor vuelva a ingrasar alguna de las opciones: [1] Registrar ; [2] Verificar stock: [3] Salir")
+            alert("Por favor vuelva a ingrasar alguna de las opciones: [1] Registrar ; [2] Buscar un producto ; [3] Salir")
             break;
     }
-    welcome = prompt("Bienvenido ingrese alguna de las opciones: [1] Registrar ; [2] Verificar stock: [3] Salir");
+    welcome = prompt("Bienvenido ingrese alguna de las opciones: [1] Registrar ; [2] Buscar un producto ; [3] Salir");
 }
